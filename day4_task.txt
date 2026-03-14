@@ -1,0 +1,378 @@
+1. Learn difference between <b> (bold styling) and <strong> (semantic importance). Practice both in sentences.
+
+The <b> tag is used to make text bold for styling purposes only. It does not indicate any importance.
+The <strong> tag also makes text bold, but it shows that the text is important and has semantic meaning for browsers and search engines.
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <body>
+    <p>This is a <b>bold text</b> used only for styling.</p>
+    <p>This is a <strong>very important message</strong> for students.</p>
+  </body>
+</html>
+
+2. Understand <i> (italic styling) vs <em> (emphasis). Use them in a paragraph.
+
+
+The <i> tag is used to display text in italic style without adding any special meaning.
+The <em> tag is used to emphasize a word or sentence, indicating importance or stress.
+
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question2</title>
+  </head>
+  <body>
+    <p>
+    Learning HTML is <i>interesting</i> and helpful for web development.
+    Students should <em>practice coding every day</em> to improve their skills.
+    </p>
+  </body>
+</html>
+
+
+
+3. Practice underlining text with <u>, highlighting with <mark>, and making side notes with <small>.
+
+
+
+<u> is used to underline text.
+
+<mark> is used to highlight important text.
+
+<small> is used for side notes or less important text.
+
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question3</title>
+  </head>
+  <body>
+    <p>This is <u>underlined text</u>.</p>
+    <p>Please read the <mark>important instructions</mark> carefully.</p>
+    <p>Submit the assignment today <small>(before 5 PM)</small>.</p>
+  </body>
+</html>
+
+
+4.  Create hyperlinks using <a>. Add external links, internal links, and “back to top” links.
+
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.youtube.com">Visit YouTube</a>
+
+    <!-- Internal Link -->
+    <a href="about.html">Go to About Page</a>
+
+    <!-- Back to Top Link -->
+    <a href="#top">Back to Top</a>
+  </body>
+</html>
+
+
+5. Learn how <button> works inside forms and as clickable UI elements. Practice adding button text and attributes.
+
+The <button> tag creates a clickable button on a webpage.
+It can be used inside forms to submit data or as a normal clickable UI element.
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <body>
+    <button type="button">Click Me</button>
+    <button onclick="alert('login is completed')">login</button>
+  </body>
+</html>
+
+
+6. Explore different input types (text, password, email, checkbox, radio). Build a mini form.
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <body>
+    <h1>Registeration Form</h1>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" />
+    <br />
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" />
+    <br />
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter your password" />
+    <br />
+
+    <label>Age:</label>
+    <input type="number" placeholder="Enter your age" />
+    <br />
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" />
+    <label>Male</label>
+    <input type="radio" name="gender" />
+    <label>Female</label>
+    <br />
+
+    <label>Data of birth:</label>
+    <input type="date" />
+    <br />
+
+    <label>Upload certificate:</label>
+    <input type="file" />
+    <br />
+    <button type="submit" onclick="alert('Registeration is completed')">
+      Register
+    </button>
+  </body>
+</html>
+
+
+7. Learn how to use <textarea> for multi-line input. Practice making a feedback form.
+
+
+The <textarea> tag allows users to enter long or multi-line text, such as comments or feedback.
+
+code:
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" />
+    <br />
+
+    <label>Comment</label>
+    <textarea maxlength="20"></textarea>
+  </body>
+</html>
+
+
+
+8. Combine formatting and interactive tags to create a styled feedback form (with bold labels, highlighted text, inputs, and buttons).
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question1</title>
+  </head>
+  <style>
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      background-color: rgb(186, 192, 194);
+    }
+    h2 {
+      background-color: rosybrown;
+      font-family: sans-serif;
+    }
+    ol {
+      font-family: sans-serif;
+      font-weight: 100;
+      background-color: antiquewhite;
+    }
+
+    main {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Exam Registeration Form</h1>
+    </header>
+
+    <artical>
+      <h2>Instructions:</h2>
+      <ol>
+        <li>Read all the questions carefully before starting the exam.</li>
+        <li>Write the answers clearly and neatly in the answer sheet.</li>
+        <li>
+          <strong>Do not use mobile phones</strong> or any unauthorized
+          materials during the exam.
+        </li>
+        <li>Manage your time properly and attempt all the questions.</li>
+        <li>
+          Submit the answer sheet to the invigilator before leaving the
+          examination hall.
+        </li>
+      </ol>
+    </artical>
+
+    <main>
+      <br />
+      <label>Date of register:</label>
+      <input type="date" />
+      <br />
+
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" />
+      <br />
+
+      <label> School Name:</label>
+      <input type="text" placeholder="Enter your School" />
+      <br />
+
+      <label>Class:</label>
+      <select>
+        <option>12th</option>
+        <option>11th</option>
+        <option>10th</option>
+        <option>9th</option>
+        <option>8th</option>
+        <option>7th</option>
+        <option>6th</option>
+      </select>
+      <br />
+
+      <label>Gender</label>
+      <input type="radio" name="gender" />
+      <label>Male</label>
+      <input type="radio" name="gender" />
+      <label>Female</label>
+      <br />
+
+      <label>Are you Physically Challenged?</label>
+      <input type="radio" name="question" />
+      <label>Yes</label>
+      <input type="radio" name="question" />
+      <label>No</label>
+      <br />
+
+      <label>Subjects: </label>
+      <input type="checkbox" name="select" />
+      <label>English</label>
+      <input type="checkbox" name="select" />
+      <label>Tamil</label>
+      <input type="checkbox" name="select" />
+      <label>French</label>
+      <input type="checkbox" name="select" />
+      <label>Hindi</label>
+      <input type="checkbox" name="select" />
+      <label>Science</label>
+      <input type="checkbox" name="select" />
+      <label>Maths</label>
+      <input type="checkbox" name="select" />
+      <label>Social</label>
+      <br />
+
+      <label>Any Queries</label>
+      <textarea maxlength="20"></textarea>
+    </main>
+
+    <label>Exam Scheduled Date</label>
+    <ul>
+      <li>English – 10/04/2026</li>
+      <li>Tamil – 12/04/2026</li>
+      <li>French / Hindi – 15/04/2026</li>
+      <li>Science – 18/04/2026</li>
+      <li>Mathematics – 20/04/2026</li>
+      <li>Social Science – 23/04/2026</li>
+    </ul>
+    <footer>
+      <p>
+        Note: Students must <em>check the exam schedule carefully </em>and
+        attend the exam on the assigned date and time.
+      </p>
+      <p>Contact:78245656234</p>
+      <p>asdf23@gmail.com</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
